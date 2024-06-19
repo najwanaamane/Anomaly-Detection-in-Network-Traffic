@@ -11,7 +11,8 @@ This project focuses on detecting anomalies in network traffic using clustering 
 
 1. Clustering the data using K-means and hierarchical clustering.
 2. Using attack labels as ground truth to evaluate clustering performance.
-3. Employing SVM with hierarchical clustering results to detect new anomalies.
+  (Note : we don't use the labels in the training phase!, they're only used as "ground truth" for verifying our results.).
+4. Employing SVM with hierarchical clustering results to detect new anomalies.
 
 ## Project Structure
 
