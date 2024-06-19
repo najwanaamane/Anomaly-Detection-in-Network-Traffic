@@ -1,5 +1,5 @@
 # Anomaly-Detection-in-Network-Traffic
-Unsupervised and supervised techniques for detecting anomalies in network traffic using on unlabeled data
+Unsupervised and supervised techniques for detecting anomalies in network traffic on unlabeled data
 
 
 ---
