@@ -22,7 +22,11 @@ This project focuses on detecting anomalies in network traffic using clustering 
 
 ## Dataset Description
 
-The KDD Cup 1999 dataset contains approximately 4.9 million network connections, each represented by 38 features. These features include the number of bytes sent, connection attempts, TCP errors, etc. The dataset is commonly used for network security analysis.
+The KDD Cup 1999 dataset contains approximately 4.9 million network connections, each represented by 38 features. These features include the number of bytes sent, connection attempts, TCP errors, etc. The dataset is commonly used for network security analysis.   
+
+
+![image](https://github.com/najwanaamane/Anomaly-Detection-in-Network-Traffic/assets/86806375/260d98b2-3aae-41aa-b205-9ffd158b7280)
+
 
 ## Anomaly Types
 
@@ -48,9 +52,14 @@ The dataset includes 22 different types of attacks categorized into four main gr
 3. **Choosing `k`**:
     - The best `k` is chosen based on the minimum WSSSE value.
     - Iterative approach to find optimal `k`.
+  
+      ![image](https://github.com/najwanaamane/Anomaly-Detection-in-Network-Traffic/assets/86806375/2f0e5d49-b740-4acb-b212-847471b05b4c)
+
+  
+      
 
 4. **Anomaly Detection**:
-    - Anomalies are identified by measuring the distance of data points to their nearest cluster centroids.
+    - Anomalies are identified by measuring the distance of data points to their nearest cluster centroids and their number of occurences.
     - Points with distances exceeding a certain threshold are considered anomalies.
 
 #### Results
@@ -78,6 +87,12 @@ The dataset includes 22 different types of attacks categorized into four main gr
 - **Cluster Visualization**: Dendrograms clearly showed distinct clusters of normal and anomalous traffic.
 - **Anomaly Detection**: High accuracy in identifying outliers, consistent with ground truth labels.
 
+  ![image](https://github.com/najwanaamane/Anomaly-Detection-in-Network-Traffic/assets/86806375/555af7c5-b63c-455c-aec1-09a897d7e360)
+  ![image](https://github.com/najwanaamane/Anomaly-Detection-in-Network-Traffic/assets/86806375/6e6760b7-7171-438c-af42-620661c91b56)
+
+
+
+
 ### Support Vector Machine (SVM)
 
 - SVM is used to classify new data points based on the clusters formed by hierarchical clustering.
@@ -88,6 +103,12 @@ The dataset includes 22 different types of attacks categorized into four main gr
 - **SVM Accuracy**: Achieved high accuracy in detecting new anomalies.
 - **Performance Metrics**: Precision, recall, and F1-score metrics indicated robust performance in anomaly detection.
 - **Generalization**: SVM effectively generalized to new, unseen network traffic, improving overall detection rates.
+
+  ![image](https://github.com/najwanaamane/Anomaly-Detection-in-Network-Traffic/assets/86806375/d59a731f-81d3-4e9c-b69e-3a22bb9fa2bd)
+
+  ![image](https://github.com/najwanaamane/Anomaly-Detection-in-Network-Traffic/assets/86806375/48c992e0-3372-495c-ba3f-9bf7725b68b9)
+
+
 
 ## Conclusion
 
@@ -110,12 +131,12 @@ pip install pandas numpy scikit-learn scipy matplotlib seaborn
     - Run the cells sequentially to perform hierarchical clustering, evaluate with ground truth labels, and train an SVM classifier.
 
 2. **K-means Clustering**:
-    - Load the notebook `Anomaly Detection in Network Traffic with K-means clustering.ipynb`.
+    - Load the notebook `K-means clustering.ipynb`.
     - Run the cells sequentially to perform anomaly detection using K-means clustering and evaluate with ground truth labels.
 
 ## Data
 
-Both notebooks use the KDD Cup 1999 dataset. Ensure you have the dataset (`kddcup.data_10_percent.csv`) in the same directory as the notebooks or provide the correct path to the dataset in the data loading sections.
+Both notebooks use the KDD Cup 1999 dataset. Ensure you have the dataset (`kddcup.data_10_percent.csv`) or the (`kddcup.data.csv`) in the same directory as the notebooks or provide the correct path to the dataset in the data loading sections.
 
 ## Conclusion
 
