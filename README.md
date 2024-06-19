@@ -10,7 +10,7 @@ Unsupervised and supervised techniques for detecting anomalies in network traffi
 This project focuses on detecting anomalies in network traffic using clustering techniques (K-means and hierarchical clustering) on unlabeled data. The KDD Cup 1999 dataset is utilized to identify abnormal traffic patterns and distinguish them from normal behavior. The approach involves:
 
 1. Clustering the data using K-means and hierarchical clustering.
-2. Using attack labels as ground truth to evaluate clustering performance.
+2. Using attack labels as ground truth to evaluate clustering performance.   
   (Note : we don't use the labels in the training phase!, they're only used as "ground truth" for verifying our results.).
 4. Employing SVM with hierarchical clustering results to detect new anomalies.
 
